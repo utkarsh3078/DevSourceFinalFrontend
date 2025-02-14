@@ -52,7 +52,6 @@ function ProjectSection() {
                     Android Members
                 </button>
             </div>
-            <h1 className=" text-center p-10 text-4xl">{title}</h1>
             <TaskCard title={tasks[i].heading} endDate={tasks[i].StartingDate} images={tasks[i].images} description={tasks[i].description}/>
         </div>
      );

@@ -27,7 +27,7 @@ function Projects() {
             <Nav/>
             <div className="flex">
                 {/* sidebar  */}
-                <div className="w-[18%] pt-28 flex flex-col gap-10">
+                <div className="w-[18%] pt-24 flex flex-col gap-10">
                     <button className="w-[100%] p-5 bg-green-700 text-white text-2xl rounded-sm hover:bg-green-500 " onClick={()=>{setMode(0)}} >Learn</button>
                     <button className="w-[100%] p-5 bg-green-700 text-white text-2xl rounded-sm hover:bg-green-500 " onClick={()=>{setMode(1)}} >Practice</button>
                     <button className="w-[100%] p-5 bg-green-700 text-white text-2xl rounded-sm hover:bg-green-500 " onClick={()=>{setMode(2)}} >Leader board</button>

@@ -4,7 +4,9 @@ function Nav() {
     return (
         <div className="fixed top-0 left-0 flex px-10 py-5 justify-between text-white z-50 w-full bg-slate-800">
             <div className="cursor-pointer text-2xl p-auto">
-                <img src="/DevSourceLogo.png " className="h-14 w-14"></img>
+                <Link href="/" >
+                    <img src="/DevSourceLogo.png " className="h-14 w-14"></img>
+                </Link>
             </div>
             <div className="flex gap-10">
                 {["Home", "Members", "Groups", "Projects" , "Blog", "Profile" ].map((item) => (

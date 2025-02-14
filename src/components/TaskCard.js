@@ -4,13 +4,13 @@ function TaskCard({ title, endDate, images, description }) {
     const [currentImage, setCurrentImage] = useState(0);
 
     return (
-        <div className="bg-white shadow-lg rounded-lg p-4 w-[100%] border border-gray-200 hover:shadow-xl transition-shadow duration-300">
-            <h2 className="text-xl font-bold text-gray-800">{title}</h2>
+        <div className="bg-slate-800 shadow-lg rounded-lg p-4 w-[100%] border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+            <h2 className="text-xl font-bold text-white">{title}</h2>
 
-            <p className="text-sm text-gray-500">Starting Date: {endDate}</p>
+            <p className="text-sm text-gray-400">Starting Date: {endDate}</p>
 
             {images.length > 0 && (
-                <div className="relative w-full h-48 mt-2">
+                <div className="relative h-56 w-full mt-2">
                     <img
                         src={images[currentImage]}
                         alt={`Task Image ${currentImage + 1}`}
@@ -34,7 +34,7 @@ function TaskCard({ title, endDate, images, description }) {
                     )}
                 </div>
             )}
-            <p className="mt-2  text-sm md:text-2xl text-gray-700">{description}</p>
+            <p className="mt-2  text-sm md:text-2xl text-gray-200">{description}</p>
         </div>
     );
 }

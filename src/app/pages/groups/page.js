@@ -1,3 +1,5 @@
+import BackGround from "@/components/background";
+import Footer from "@/components/footer";
 import GroupCard from "@/components/groupCard";
 import Nav from "@/components/navbar";
 
@@ -23,6 +25,7 @@ function Groups() {
     return (
         <div>
             <Nav />
+            <BackGround className=""/>
             {DescData.map((group, index) => (
                 <GroupCard
                     key={index} // Key is only for React, not a prop
@@ -31,6 +34,7 @@ function Groups() {
                     background={group.background}
                 />
             ))}
+            <Footer/>
         </div>
     );
 }
