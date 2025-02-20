@@ -4,9 +4,15 @@ function Footer() {
             <div className="text-4xl mb-6 md:mb-0">
                 <p>DevSource Club </p>
                 <div className="flex gap-5 mt-5 justify-center md:justify-start">
-                    <img src="/insta.svg" className="h-12 w-12 hover:bg-white hover:scale-125 rounded-lg duration-300" alt="Instagram" />
-                    <img src="/whatsapp.svg" className="h-12 w-12 hover:bg-white hover:scale-125 rounded-lg duration-300" alt="WhatsApp" />
-                    <img src="/linkdin.svg" className="h-12 w-12 hover:bg-white hover:scale-125 rounded-lg duration-300" alt="LinkedIn" />
+                    <div className="h-12 w-12 hover:bg-white hover:scale-125 rounded-lg duration-300 p-2">
+                        <img src="/insta.svg" className="h-full w-full rounded-lg" alt="Instagram" />
+                    </div>
+                    <div className="h-12 w-12 hover:bg-white hover:scale-125 rounded-lg duration-300 p-2">
+                        <img src="/whatsapp.svg" className="h-full w-full rounded-lg" alt="WhatsApp" />
+                    </div>
+                    <div className="h-12 w-12 hover:bg-white hover:scale-125 rounded-lg duration-300 p-2">
+                        <img src="/linkdin.svg" className="h-full w-full rounded-lg" alt="LinkedIn" />
+                    </div>
                 </div>
             </div>
             <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-center">

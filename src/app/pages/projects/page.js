@@ -27,15 +27,15 @@ function Projects() {
             <Nav/>
             <div className="flex">
                 {/* sidebar  */}
-                <div className="w-[18%] pt-28 flex flex-col md:gap-10 gap-5">
-                    <button className="w-[100%] p-5 bg-green-700 text-white md:text-2xl text-xs rounded-xl hover:bg-green-500  " onClick={()=>{setMode(0)}} >Learn</button>
-                    <button className="w-[100%] p-5 bg-green-700 text-white md:text-2xl text-xs rounded-xl hover:bg-green-500  " onClick={()=>{setMode(1)}} >Practice</button>
-                    <button className="w-[100%] p-5 bg-green-700 text-white md:text-2xl text-xs rounded-xl hover:bg-green-500  " onClick={()=>{setMode(2)}} >Leader board</button>
-                    <button className="w-[100%] p-5 bg-green-700 text-white md:text-2xl text-xs rounded-xl hover:bg-green-500  " onClick={()=>{setMode(3)}} >Build a project</button>
+                <div className="md:mt-28 mt-28 md:w-[18%] md:m-2 ml-2 gap-10 flex flex-col">
+                    <button className="w-[100%] md:p-5 p-2  bg-green-700 text-white md:text-2xl text-xs md:rounded-lg rounded-sm hover:bg-green-600  " onClick={()=>{setMode(0)}} >Learn</button>
+                    <button className="w-[100%] md:p-5 p-2 bg-green-700 text-white md:text-2xl text-xs md:rounded-lg rounded-sm hover:bg-green-600  " onClick={()=>{setMode(1)}} >Practice</button>
+                    <button className="w-[100%] md:p-5 p-2 bg-green-700 text-white md:text-2xl text-xs md:rounded-lg rounded-sm hover:bg-green-600  " onClick={()=>{setMode(2)}} >Leader board</button>
+                    <button className="w-[100%] md:p-5 p-2 bg-green-700 text-white md:text-2xl text-xs md:rounded-lg rounded-sm hover:bg-green-600  " onClick={()=>{setMode(3)}} >Build a project</button>
                 </div>
-                <div className="w-2 h-screen bg-gray-400 mx-5 "></div> 
+                <div className="w-2 h-screen bg-gray-400 mx-2 "></div> 
                 {/* level */}
-                <div className="w-[82%] pt-28">
+                <div className="md:w-[82%] w-[80%] pt-28">
                     {
                         renderContent()
                     }

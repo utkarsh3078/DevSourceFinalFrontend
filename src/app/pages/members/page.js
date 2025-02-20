@@ -21,6 +21,7 @@ function Members() {
     }
     const Data = [[
         "Vishesh (UI/UX)",
+        "Anshu Kumar",
         "Arnav Gupta",
         "Mayank Suri",
         "Akash Das",
@@ -45,15 +46,15 @@ function Members() {
         <div>
             <Nav />
             <div className="w-full">
-                <div className="flex gap-10 mt-32 text-sm md:text-lg w-full bg-slate-500 p-5 justify-evenly rounded-lg">
-                    <button className="bg-emerald-600 text-white p-2 rounded-lg" onClick={() => setWeb()}>
+                <div className="flex gap-10 mt-20 text-sm md:text-lg w-full bg-slate-500 p-2 justify-evenly rounded-b-lg">
+                    <button className="bg-green-800 hover:border-green-400 border-2 border-gray-500 hover:bg-green-500 duration-300 hover:scale-125 md:text-xl text-white p-2 rounded-lg" onClick={() => setWeb()}>
                         Web Members
                     </button>
-                    <button className="bg-blue-600 text-white p-2 rounded-lg" onClick={() => setGame()}>
+                    <button className="bg-pink-800 hover:border-pink-400 border-2 border-gray-500 text-white hover:bg-pink-600 duration-300 hover:scale-125 md:text-xl  p-2 rounded-lg" onClick={() => setGame()}>
                         Game Members
                     </button>                    
-                    <button className="bg-red-600 text-white p-2 rounded-lg" onClick={() => setApp()}>
-                        Android Members
+                    <button className="bg-sky-800 hover:border-sky-400 border-2 border-gray-500 text-white hover:bg-sky-600 duration-300 hover:scale-125 md:text-xl p-2 rounded-lg" onClick={() => setApp()}>
+                        Mobile Members
                     </button>
                 </div>
                 {title && <MemberList title={title} data={Data[i]} />}

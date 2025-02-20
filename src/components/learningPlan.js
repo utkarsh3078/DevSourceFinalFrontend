@@ -37,7 +37,7 @@ function Plan() {
     });
 
     return (
-        <div className="w-full flex flex-col md:ml-[30%] ml-0  items-center md:items-start md:pt-0 gap-20 h-[75vh] overflow-y-auto p-10">
+        <div className="w-full flex flex-col md:ml-[30%] ml-0  items-center md:items-start md:pt-0 gap-36 h-[75vh] overflow-y-auto p-10">
             {margins.map((margin, index) => (
                     <Level
                         key={index}

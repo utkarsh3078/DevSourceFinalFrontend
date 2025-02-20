@@ -1,5 +1,4 @@
 "use client"
-
 import TaskCard from "./TaskCard";
 import { useState } from "react";
 function ProjectSection() {
@@ -41,14 +40,14 @@ function ProjectSection() {
     
     return ( 
         <div className="h-[80vh] w-full overflow-auto overflow-x-hidden "> 
-            <div className="flex gap-10 mx-20 text-black justify-evenly rounded-lg">
-                <button className="bg-emerald-600 text-white p-2 rounded-lg" onClick={() => setWeb()}>
+            <div className="flex w-full gap-10 text-black justify-evenly rounded-lg">
+                <button className="bg-emerald-600 md:text-xl text-xs text-white p-2 rounded-lg" onClick={() => setWeb()}>
                     Web Members
                 </button>
-                <button className="bg-blue-600 text-white p-2 rounded-lg" onClick={() => setGame()}>
+                <button className="bg-blue-600 md:text-xl text-xs text-white p-2 rounded-lg" onClick={() => setGame()}>
                     Game Members
                 </button>                    
-                <button className="bg-red-600 text-white p-2 rounded-lg" onClick={() => setApp()}>
+                <button className="bg-red-600 md:text-xl text-xs text-white p-2 rounded-lg" onClick={() => setApp()}>
                     Android Members
                 </button>
             </div>
