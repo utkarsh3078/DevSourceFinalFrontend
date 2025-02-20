@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+@font-face {
+    font-family: 'TrialCondensedBold';
+    src: url('/fonts/BaseNeueTrial-CondensedBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'mogiant';
+    src: url('/fonts/mogiant.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Airnt';
+    src: url('/fonts/fonts/Airnt.otf') format('opentype');
+}
+
+/* BaseNeueTrial-Black */
+  
+@font-face {
+    font-family: 'Trial-Black';
+    src: url('/fonts/BaseNeueTrial-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Trial-Bold';
+    src: url('/fonts/BaseNeueTrial-Bold.ttf') format('truetype');
+}
+
+.TrialCondensedBold {
+    font-family: 'TrialCondensedBold';
+}
+  
+.mogiant {
+    font-family: 'mogiant';
+}
+  
+.Airnt {
+    font-family: 'Airnt';
+}
+
+.Trial-Black {
+    font-family: 'Trial-Black';
+}
+
+.Trial-Bold {
+    font-family: 'Trial-Bold';
+}
+
+.poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  .chakra-petch-light {
+    font-family: "Chakra Petch", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .chakra-petch-regular {
+    font-family: "Chakra Petch", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .chakra-petch-medium {
+    font-family: "Chakra Petch", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .chakra-petch-semibold {
+    font-family: "Chakra Petch", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .chakra-petch-bold {
+    font-family: "Chakra Petch", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .chakra-petch-light-italic {
+    font-family: "Chakra Petch", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .text-outline {
+    text-shadow: 
+      2px 2px 0 #000, 
+      -2px -2px 0 #000, 
+      2px -2px 0 #000, 
+      -2px 2px 0 #000;
+  }
+
+  .chakra-petch-regular-italic {
+    font-family: "Chakra Petch", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .chakra-petch-medium-italic {
+    font-family: "Chakra Petch", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .chakra-petch-semibold-italic {
+    font-family: "Chakra Petch", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .chakra-petch-bold-italic {
+    font-family: "Chakra Petch", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  
+  
+
+
