@@ -40,8 +40,8 @@ function ProjectSection() {
     }
     
     return ( 
-        <div>
-            <div className="flex gap-10 mx-20 text-black p-5 justify-evenly rounded-lg">
+        <div className="h-[80vh] w-full overflow-auto overflow-x-hidden "> 
+            <div className="flex gap-10 mx-20 text-black justify-evenly rounded-lg">
                 <button className="bg-emerald-600 text-white p-2 rounded-lg" onClick={() => setWeb()}>
                     Web Members
                 </button>

@@ -2,7 +2,7 @@ export default function About() {
     return (
       <div className="bg-gray-900 text-white py-16 px-16">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl font-bold text-yellow-400">About DevSource Club</h1>
+          <h1 className=" text-2xl md:text-5xl font-bold text-yellow-400">About DevSource Club</h1>
           <p className="text-lg mt-6 text-gray-300">
             Welcome to <span className="text-yellow-400 font-semibold">DevSource Club</span>, a thriving community of developers under the <span className="text-yellow-400 font-semibold">USIC&T ACM Student Chapter</span>. Our mission is to <span className="text-yellow-400 font-semibold">skill up our members</span> and provide them with exposure to diverse development domains, including <span className="text-orange-400 font-semibold">web development, game development, app development, and open-source collaboration</span>.
           </p>

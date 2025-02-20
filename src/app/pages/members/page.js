@@ -1,12 +1,10 @@
 "use client"
 
-import BackGround from "@/components/background";
 import MemberList from "@/components/members";
 import Nav from "@/components/navbar";
 import { useState } from "react";
 
 function Members() {
-
     const [title, setTitle] = useState("");
     const [i , setI] = useState(0);
     const setWeb = () =>{
@@ -31,11 +29,12 @@ function Members() {
         "Vansh Kumar",
         "Utkarsh",
         "Sonu",
-        "Khushi Bhaskar"
+        "Khushi Bhaskar",
+        "Aryan Thakur"
     ],
     [
         "Khush",
-        "Anuraag"
+        "Anurag"
     ],
     [
         "Yash Mishra",
@@ -45,9 +44,8 @@ function Members() {
     return ( 
         <div>
             <Nav />
-            <BackGround/>
-            <div>
-                <div className="flex gap-10 mt-32 mx-20 text-black p-5 justify-evenly rounded-lg">
+            <div className="w-full">
+                <div className="flex gap-10 mt-32 text-sm md:text-lg w-full bg-slate-500 p-5 justify-evenly rounded-lg">
                     <button className="bg-emerald-600 text-white p-2 rounded-lg" onClick={() => setWeb()}>
                         Web Members
                     </button>

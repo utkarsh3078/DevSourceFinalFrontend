@@ -1,6 +1,6 @@
 function GroupCard({title, desc, background }) {
     return (
-        <div className="relative flex flex-col z-50 p-10 rounded-lg mt-28 overflow-hidden">
+        <div className="relative flex flex-col p-10 rounded-lg mt-28 overflow-hidden">
             <video
                 src={background}
                 autoPlay
@@ -14,7 +14,7 @@ function GroupCard({title, desc, background }) {
             
             <div className="relative z-10 text-white">
                 <h1 className="text-4xl font-bold">{title}</h1>
-                <p className="p-10 text-2xl w-[50%]">{desc}</p>
+                <p className="p-10 md:text-2xl text-sm   md:w-[50%]">{desc}</p>
             </div>
         </div>
     );

@@ -1,23 +1,23 @@
 function Footer() {
     return ( 
-        <div className="flex py-10 px-20 w-[full] justify-between pb-36">
-            <div className="text-4xl">
+        <div className="flex flex-col md:flex-row py-10 px-10 md:px-20 w-full justify-between pb-36 items-center text-center md:text-left">
+            <div className="text-4xl mb-6 md:mb-0">
                 <p>DevSource Club </p>
-                <div className="flex gap-5 m-5">
-                    <img src="/insta.svg" className=" text-blue h-12 w-12 hover:bg-white hover:scale-125 rounded-lg duration-300"></img>
-                    <img src="/whatsapp.svg" className="h-12 w-12 hover:bg-white hover:scale-125 rounded-lg duration-300" ></img>
-                    <img src="/linkdin.svg" className="h-12 w-12 hover:bg-white hover:scale-125 rounded-lg duration-300 " ></img>
+                <div className="flex gap-5 mt-5 justify-center md:justify-start">
+                    <img src="/insta.svg" className="h-12 w-12 hover:bg-white hover:scale-125 rounded-lg duration-300" alt="Instagram" />
+                    <img src="/whatsapp.svg" className="h-12 w-12 hover:bg-white hover:scale-125 rounded-lg duration-300" alt="WhatsApp" />
+                    <img src="/linkdin.svg" className="h-12 w-12 hover:bg-white hover:scale-125 rounded-lg duration-300" alt="LinkedIn" />
                 </div>
             </div>
-            <div className="flex gap-10">
-                <img src="/DevSourceLogo.png" className=" h-20 w-20"></img>
+            <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-center">
+                <img src="/DevSourceLogo.png" className="h-20 w-20" alt="DevSource Logo" />
                 <div className="text-2xl">
-                    <p>Bhuwan Thapa <span className=" pl-5 TrialCondensedBold">Lead</span></p>
-                    <p>Adarsh Tiwari <span className=" pl-5 TrialCondensedBold">Vice Lead</span> </p>
+                    <p>Bhuwan Thapa <span className="pl-2 font-bold">Lead</span></p>
+                    <p>Adarsh Tiwari <span className="pl-2 font-bold">Vice Lead</span> </p>
                 </div>
             </div>
         </div>
-     );
+    );
 }
 
 export default Footer;

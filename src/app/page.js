@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="bg-slate-800 w-[100vw] overflow-hidden">
       <Nav />
-      <div className=" mt-24 relative mx-auto my-10 bg-yellow-500 rounded-lg justify-center items-center w-[90vw] h-[80vh]">
+      <div className=" mt-24 relative mx-auto my-10 bg-yellow-500 rounded-lg justify-center items-center w-[90vw] md:h-[80vh]">
         <video
           src="/video.mp4"
           autoPlay
@@ -20,7 +20,7 @@ export default function Home() {
         {/* Black overlay */}
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 rounded-lg"></div>
         <div className=" text-white text-4xl p-10 absolute top-0 left-0 w-full h-full rounded-lg flex justify-center items-center ">
-            <p className="mogiant text-8xl shadow-lg"></p>Welcome to{" "} <br/>
+            <p className="mogiant text-8xl shadow-lg"></p>
         <ReactTyped
           strings={["DevSource"]}
           typeSpeed={100}

@@ -23,36 +23,25 @@ function Projects() {
 
 
     return ( 
-        <div className="bg-slate-800">
+        <div className="bg-slate-800 h-screen overflow-hidden">
             <Nav/>
             <div className="flex">
                 {/* sidebar  */}
-                <div className="w-[18%] pt-24 flex flex-col gap-10">
-                    <button className="w-[100%] p-5 bg-green-700 text-white text-2xl rounded-sm hover:bg-green-500 " onClick={()=>{setMode(0)}} >Learn</button>
-                    <button className="w-[100%] p-5 bg-green-700 text-white text-2xl rounded-sm hover:bg-green-500 " onClick={()=>{setMode(1)}} >Practice</button>
-                    <button className="w-[100%] p-5 bg-green-700 text-white text-2xl rounded-sm hover:bg-green-500 " onClick={()=>{setMode(2)}} >Leader board</button>
-                    <button className="w-[100%] p-5 bg-green-700 text-white text-2xl rounded-sm hover:bg-green-500 " onClick={()=>{setMode(3)}} >Build a project</button>
+                <div className="w-[18%] pt-28 flex flex-col md:gap-10 gap-5">
+                    <button className="w-[100%] p-5 bg-green-700 text-white md:text-2xl text-xs rounded-xl hover:bg-green-500  " onClick={()=>{setMode(0)}} >Learn</button>
+                    <button className="w-[100%] p-5 bg-green-700 text-white md:text-2xl text-xs rounded-xl hover:bg-green-500  " onClick={()=>{setMode(1)}} >Practice</button>
+                    <button className="w-[100%] p-5 bg-green-700 text-white md:text-2xl text-xs rounded-xl hover:bg-green-500  " onClick={()=>{setMode(2)}} >Leader board</button>
+                    <button className="w-[100%] p-5 bg-green-700 text-white md:text-2xl text-xs rounded-xl hover:bg-green-500  " onClick={()=>{setMode(3)}} >Build a project</button>
                 </div>
                 <div className="w-2 h-screen bg-gray-400 mx-5 "></div> 
                 {/* level */}
-                <div className="w-[64%] pt-28">
+                <div className="w-[82%] pt-28">
                     {
                         renderContent()
                     }
                 </div>
                 
                 {/* switch the group */}
-                <div className="pt-28 w-[18%]">
-                    <div>
-                        Learn Web Developent
-                    </div>
-                    <div>
-                        Learn Android Development
-                    </div>
-                    <div>
-                        Learn Game Development
-                    </div>
-                </div>
 
             </div>
         </div>
