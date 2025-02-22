@@ -3,36 +3,138 @@
 import Nav from "@/components/navbar";
 import About from "@/components/about";
 import Footer from "@/components/footer";
-import { ReactTyped } from "react-typed";
-import "./font.css"
+import { motion } from "framer-motion";
+import "./font.css";
+import TechTool from "@/components/techTool";
+import { useRef , useState , useEffect } from "react";
+
 export default function Home() {
+
+  const elementRef = useRef(null);
+      const [Leftoffset,SetLeftOffset] = useState(0);
+  
+      useEffect(()=>{
+          if(elementRef.current){
+              const element = elementRef.current;
+              SetLeftOffset(element.offsetLeft);
+          }
+      })
+
+
+
+
+  const TechStack = [
+    {
+      name:"React js",
+      link:"https://pluspng.com/img-png/react-logo-png-img-react-logo-png-react-js-logo-png-transparent-png-1142x1027.png",
+    },
+    {
+      name:"Mongo DB",
+      link:"/TechStackLogos/mongodb.png"
+    },
+    {
+      name:"Unity",
+      link:"/TechStackLogos/unity.png"
+    },
+    {
+      name:"Blender",
+      link:"/TechStackLogos/blender.png"
+    },
+    {
+      name:"node js",
+      link:"/TechStackLogos/nodejs.png"
+    },
+    {
+      name:"Git HUB",
+      link:"/TechStackLogos/github.png"
+    },
+    {
+      name:"Git",
+      link:"/TechStackLogos/git.png"
+    },
+    {
+      name:"Kotlin",
+      link:"/TechStackLogos/kotlin-logo.png"
+    },
+    {
+      name:"Flutter",
+      link:"/TechStackLogos/flutter-logo.png"
+    },
+    {
+      name:"Android Studio",
+      link:"/TechStackLogos/AndroidStudio.png"
+    },
+    {
+      name:"FireBase",
+      link:"/TechStackLogos/firebase.png"
+    }
+
+  ]
+
+
   return (
     <div className="bg-slate-800 w-[100vw] overflow-hidden">
       <Nav />
-      <div className=" mt-24 relative mx-auto my-10 bg-transparent rounded-lg justify-center items-center w-[100vw] overflow-x-hidden md:h-[100vh]">
-        <video
-          src="/video.mp4"
-          autoPlay
-          muted
-          loop
-          className="w-fit h-fit rounded-lg shadow-lg"
-        />
-        {/* Black overlay */}
-        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 rounded-lg"></div>
-        <div className=" text-white text-4xl p-10 absolute top-0 left-0 w-full h-full rounded-lg flex justify-center items-center ">
-            <p className="mogiant text-8xl shadow-lg"></p>
-        <ReactTyped
-          strings={["DevSource"]}
-          typeSpeed={100}
-          loop
-          backSpeed={20}
-          cursorChar=">"
-          showCursor={true}
-        />
+      <div className="mt-22 relative my-10 bg-gradient-to-r rounded-lg z-5 flex md:flex-row flex-col-reverse justify-center items-center w-full h-[100vh] md:h-[100vh]  p-3 ">
+        <div className="-z-5 absolute h-full w-full overflow-hidden">
+          <img className="h-fit w-fit object-cover " src="/Golden_Back.svg"></img>
+        </div>
+        
+        <div className="md:w-[50%] text-2xl flex flex-col justify-center">
+          <motion.h1
+            className="text-8xl font-bold tracking-wider text-center text-transparent inline-block bg-clip-text"
+            animate={{ backgroundPosition: ["0% 0%", "0% 100%", "0% 0%"] }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+            style={{
+              backgroundImage: "linear-gradient(to top, orange, yellow, red)",
+              backgroundSize: "auto 200%",
+            }}
+          >
+            DevSource
+          </motion.h1>
+          <p className="text-center">
+            The Most Unique and diverse Club in USICT ACM
+          </p>
+
+          <button className="mt-4 px-6 mx-auto text-white font-bold text-lg uppercase tracking-wider bg-red-600 hover:bg-red-700 transition-all duration-300 border-2 border-red-800 w-[50%] rounded-md shadow-md transform hover:scale-105 active:scale-95 ">
+            Surprise me
+          </button>
+        </div>
+        <div className="p-10">
+          <motion.img
+            src="/DevSourceLogo.png"
+            className="w-40 h-40 md:h-fit md:w-fit object-cover rounded-lg"
+            animate={{ y: [0, -10, 0] }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+          />
         </div>
       </div>
-      <About/>
-      <Footer/>
+
+
+      <About />
+
+      {/* Section with Images Appearing Smoothly */}
+      <div className="w-full h-full">
+        <h1 className="p-5 text-2xl">Tech Stask </h1>
+        <div className=" md:flex xs:flex-col md:flex-row flex-wrap md:gap-10 p-10 justify-center" >
+          {
+          TechStack.map((data, index) => (
+            <motion.div
+              key={index}
+              className="overflow-hidden md:w-[40%] h-full rounded-lg shadow-lg"
+              ref={elementRef}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.2 }}
+              viewport={{ once: true }}
+            >
+              <TechTool src={data.link} name={data.name} index={index} />
+            </motion.div>
+          ))}
+        </div>
+      </div>
+
+      <Footer />
     </div>
   );
 }

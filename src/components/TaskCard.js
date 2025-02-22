@@ -4,7 +4,7 @@ function TaskCard({ title, endDate, images, description }) {
     const [currentImage, setCurrentImage] = useState(0);
 
     return (
-        <div className="bg-white shadow-lg rounded-lg mt-2 ml-2 mb-6 p-4 w-[100%] border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+        <div className="bg-white shadow-lg rounded-lg mt-2 ml-2  mb-6 p-4 w-[100%] border border-gray-200 hover:shadow-xl transition-shadow duration-300">
             <h2 className="text-xl font-bold text-gray-800">{title}</h2>
 
             <p className="text-sm text-gray-500">Starting Date: {endDate}</p>
