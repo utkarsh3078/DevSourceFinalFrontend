@@ -1,0 +1,54 @@
+{
+    "web" : 
+        {
+            "HTML" : [
+
+            ] ,
+            "CSS" : [
+
+            ] , 
+            "Java Script" : [
+
+            ], 
+            "React": [
+
+            ] , 
+            "Next" : [
+    
+            ] , 
+            "Vuejs" : [
+
+            ] , 
+            "Express":[
+
+            ] , 
+            "Mongo db" : [
+
+            ] 
+        }
+     ,
+    "android" : {
+        "Android Studio ": [] , 
+        "Kotlin" : [] , 
+        "Flutter" : []
+     } , 
+    "Game" : {
+        "C++" : [],
+        "Unity" : [] , 
+        "Godot" : [] , 
+        "Sprites" : [] , 
+        "3dModelling" : []
+    },
+    "AI" : {
+        "Machine Learning" : [] , 
+        "Data Science" : []
+     } , 
+    "System designs" : {
+        "Low level Designs" : [] ,
+        "High Level Designs" : []
+    } ,
+    "Cloud Computing" : {
+        "aws" : [] 
+    }
+
+}

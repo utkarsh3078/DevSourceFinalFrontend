@@ -1,5 +1,4 @@
 "use client";
-
 import Nav from "@/components/navbar";
 import { useState } from "react";
 import { FaBold, FaItalic, FaUnderline, FaImage } from "react-icons/fa";

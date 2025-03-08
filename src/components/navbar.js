@@ -8,7 +8,7 @@ function Nav() {
 
     return (
         <nav className="fixed top-0 left-0 w-full bg-slate-800 text-white z-50 shadow-md">
-            <div className="flex items-center justify-between px-6 py-4 relative">
+            <div className="flex items-center justify-between px-6 py-4">
                 {/* Logo */}
                 <div className="cursor-pointer">
                     <img src="/DevSourceLogo.png" className="h-12 w-12" alt="Logo" />
@@ -16,14 +16,14 @@ function Nav() {
 
                 {/* Hamburger Menu (Mobile) */}
                 <button 
-                    className="md:hidden text-gray-300 focus:outline-none relative z-50" 
+                    className="md:hidden text-gray-300 focus:outline-none" 
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     {isOpen ? <X size={28} /> : <Menu size={28} />}
                 </button>
 
                 {/* Desktop Navigation */}
-                <div className="hidden md:flex gap-8">
+                <div className="hidden md:flex gap-8 TrialCondensedBold tracking-widest">
                     {["Home", "Members", "Groups", "Projects", "Blog", "Profile"].map((item) => (
                         <Link 
                             href={item === "Home" ? "/" : "/pages/" + item.toLowerCase()} 
@@ -42,7 +42,7 @@ function Nav() {
 
             {/* Mobile Navigation */}
             {isOpen && (
-                <div className="md:hidden fixed top-0 right-0 w-2/5 h-full bg-slate-900 flex flex-col items-center gap-4 pt-16 pb-4 shadow-lg z-40">
+                <div className="md:hidden flex flex-col items-center gap-4 pb-4 bg-slate-900">
                     {["Home", "Members", "Groups", "Projects", "Blog", "Profile"].map((item) => (
                         <Link 
                             href={item === "Home" ? "/" : "/pages/" + item.toLowerCase()} 
